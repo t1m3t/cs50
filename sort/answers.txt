@@ -1,0 +1,14 @@
+sort1 uses: bubble sort
+
+How do you know?:
+Bubble sort is the only sort where the O and Ω are different at O(N^2) and Ω(N). Therefore we just have to look at diferent times for reversed and sorted numbers. In sorted50000.txt and reversed50000.txt, the times were drastically different at 3.207s for sorted versus 12.634s for reversed.
+
+sort2 uses: merge sort
+
+How do you know?:
+Throughout all the tests, including random, reversed, and sorted, sort2 used significantly less time than the othe two sorts, other than one test. This was between sort2 and sort1 with sorted50000.txt. This makes sense because with bubble sort, a sorted list will produce faster results with a Ω(N), as opposed to the Ω(NlogN) of merge sort.
+
+sort3 uses: selection sort
+
+How do you know?:
+In order for a sort to be selection sort, the time for the worst case scenario and the time for the best case scenario must be the same. This means that for sorted and reversed, the time is equal. This is shown between reversed5000.txt and sorted5000.txt, where the times for sort3 were equal at approximately .034s, as opposed to sort1 which was different, and sort2 which used shorter time.
